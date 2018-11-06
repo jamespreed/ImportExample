@@ -4,4 +4,4 @@ from import_test import hello
 # from .. import hello
 
 def world():
-    return 'world'
+    return (hello() + 'world')
