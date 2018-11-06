@@ -1,5 +1,5 @@
 # import the object `hello` from the top level 
-from importtest import hello 
+from import_test import hello 
 # this would also work: 
 # from .. import hello
 
