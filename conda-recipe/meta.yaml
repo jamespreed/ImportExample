@@ -1,0 +1,25 @@
+package:
+  name: example_import
+  version: "0.1.0"
+
+# conda build finds the bld.bat file to execute the build
+# it doesn't matter where the recipe files are, as long as 
+# you point to the source directory.  here we can use the
+# variable $RECIPE_DIR and move up two levels, to the 
+# directory above setup.py
+source:
+  path: $RECIPE_DIR/../..
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+ imports:
+   - example_import
+
+about:
+  license: BSD

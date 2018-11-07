@@ -1,0 +1,2 @@
+include example_import/data/*.txt
+include README.md
